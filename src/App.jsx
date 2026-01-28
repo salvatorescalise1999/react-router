@@ -6,15 +6,20 @@ import HomePage from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
 import Product from "./pages/Product";
 
+// import del layout di ref
+import DefaultLayout from "./layouts/DefaultLayout";
+
 function App() {
 
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route index element={<HomePage />} />
-          <Route path="/chisiamo" element={<AboutUs />} />
-          <Route path="/prodotti" element={<Product />} />
+          <Route element={<DefaultLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="/chisiamo" element={<AboutUs />} />
+            <Route path="/prodotti" element={<Product />} />
+          </Route>
         </Routes>
       </BrowserRouter>
 

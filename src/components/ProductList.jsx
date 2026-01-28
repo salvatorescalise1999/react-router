@@ -14,7 +14,7 @@ function ProductList() {
     function fetchProducts() {
         axios.get(endpoint)
             .then((res) => {
-                console.log("RISPOSTA API:", res.data);   // 👈 QUI
+                console.log("RISPOSTA API:", res.data);
                 setProducts(res.data);
             })
             .catch(err => console.error(err))
@@ -25,7 +25,7 @@ function ProductList() {
 
     return (
         <>
-            <div className="actors-container">
+            <div className="product-container">
                 {products.map(product => (
                     <ProductCard product={product} key={product.id} />
                 ))}

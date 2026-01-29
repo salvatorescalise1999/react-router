@@ -5,7 +5,7 @@ import ProductList from "../components/ProductList"
 const endpoint = "https://fakestoreapi.com/products";
 
 
-function Product() {
+function Products() {
 
     // creiamo var di stato per lista Prodotti
     const [products, setProducts] = useState([]);
@@ -30,4 +30,4 @@ function Product() {
     )
 }
 
-export default Product
+export default Products

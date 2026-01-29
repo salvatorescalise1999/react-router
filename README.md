@@ -21,7 +21,7 @@ Useremo Fake Store API come backend fittizio per simulare i dati dei prodotti.
 - Centralizziamo la Navbar usando un componente Layout
 - Gestiamo la classe active per i link attivi nella Navbar
 
-## Consegna
+## Consegna 2
 
 Completiamo il nostro routing aggiungendo la pagina di dettaglio prodotto!
 

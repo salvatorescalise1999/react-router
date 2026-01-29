@@ -2,6 +2,8 @@ import axios from "axios"
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 
+import ProductDetailCard from "../components/ProductDetailCard";
+
 
 const detailEndpoint = "https://fakestoreapi.com/products";
 
@@ -24,8 +26,14 @@ function ProductDetail() {
 
     return (
         <>
-            <h2>ciao qui avrai il dettaglio </h2>
 
+            {product ? (
+                <ProductDetailCard product={product} />
+            ) : (
+                <p className="loading">Loading...</p>
+            )
+
+            }
         </>
     )
 }
